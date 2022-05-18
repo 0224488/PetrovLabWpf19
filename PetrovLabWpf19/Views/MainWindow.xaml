@@ -1,0 +1,40 @@
+﻿<Window x:Class="PetrovLavWpf19.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:PetrovLavWpf19.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Window.DataContext>
+        <vm:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid Margin="10">
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Padding" Value="10,0"/>
+                <Setter Property="Margin" Value="20,4,3,4"/>
+            </Style>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Width" Value="65"/>
+                <Setter Property="Margin" Value="3,4"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Content="Радиус:"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Radius, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Grid.Row="0" Grid.Column="2" Content="Расчитать" Command="{Binding Path=CircleLengthCommand}"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Длина окружности:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" IsReadOnly="True" Text="{Binding Path=Length, StringFormat={}{0:F2}}"
+                 />
+    </Grid>
+</Window>

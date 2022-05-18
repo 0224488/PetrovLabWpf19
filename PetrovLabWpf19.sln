@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetrovLabWpf19", "PetrovLabWpf19\PetrovLabWpf19.csproj", "{7C54F58E-763A-4EA6-8558-15E0FDC8D1A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C54F58E-763A-4EA6-8558-15E0FDC8D1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C54F58E-763A-4EA6-8558-15E0FDC8D1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C54F58E-763A-4EA6-8558-15E0FDC8D1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C54F58E-763A-4EA6-8558-15E0FDC8D1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E212EBE-130F-432D-9E81-E73F720BB0DD}
+	EndGlobalSection
+EndGlobal
